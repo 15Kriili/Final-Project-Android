@@ -489,9 +489,7 @@ Click to hide.
 
 <input type=text style="visibility: hidden"id="myNameSend"   name="myNamePost">
 <input type=text style="visibility: hidden" id=myScoreSend   name="myScorePost">
-
-
-
+<br>
 <input type=submit style="font-size:25px">
 </form>
 
@@ -502,17 +500,17 @@ Click to hide.
 
 
 <br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
+<br><br><br><br>
 <table border=3>
 
-<tr><td></td><td><input type=button value="up" onClick="{
+<tr><td></td><td><input type=button value="up" style="font-size:30px" onClick="{
 if(parseInt(document.all.myrocket.style.top)>=20){
 	document.all.myrocket.style.top = parseInt(document.all.myrocket.style.top)-20+'px'
   }
 }">
 <br>
 <td></td></tr>
-<tr><td><input type=button value="left" onclick="{
+<tr><td><input type=button value="left" style="font-size:30px" onclick="{
 if(parseInt(document.all.myrocket.style.left)){
 	document.all.myrocket.style.left = parseInt(document.all.myrocket.style.left)-20+'px'
   }
@@ -520,13 +518,14 @@ if(parseInt(document.all.myrocket.style.left)){
 
 </td><td>
 
+
  
-</td><td><input type=button value="right" onclick="{
+</td><td><input type=button value="right" style="font-size:30px" onclick="{
 if(parseInt(document.all.myrocket.style.left)<=window.innerWidth-70){
 	document.all.myrocket.style.left = parseInt(document.all.myrocket.style.left)+20+'px'
   }
 }">
-</td><tr><td><td><input type=button value="down" onclick="{
+</td><tr><td><td><input type=button value="down" style="font-size:30px" onclick="{
 if(parseInt(document.all.myrocket.style.top)<=window.innerHeight-100){
 	document.all.myrocket.style.top = parseInt(document.all.myrocket.style.top)+20+'px'
   }
@@ -536,7 +535,4 @@ if(parseInt(document.all.myrocket.style.top)<=window.innerHeight-100){
 </table>
 
 
-
-
- 
 
