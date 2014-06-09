@@ -444,6 +444,71 @@ Click to hide.
 
 
 
+
+
+
+
+<font color="green">
+<div id="myShowDiv1" style="visibility: hidden">out</div><br>
+<div id="myShowDiv2" style="visibility: hidden">out</div><br>
+<div id="myShowDiv3">out</div><br>
+<div id="Score"><p><font size="5">Your score is:</font></p></div>
+<div id="myShowDiv4"> </div><br>
+<div id="myCongrats" style="visibility: hidden"><font size="5"> CONGRATULATIONS YOU HAVE SURVIVED THE VOYAGE BACK TO EARTH! Press the Submit button to put your score in the leaderboards!</div></font>
+</font>
+
+
+
+<form id="myform" action="http://142.33.222.23/comp2014/iliou2014/FinalProjectDataBase.php" method="post">
+
+
+<input type=text style="visibility: hidden"id="myNameSend"   name="myNamePost">
+<input type=text style="visibility: hidden" id=myScoreSend   name="myScorePost">
+<br>
+<input type=submit style="font-size:25px">
+</form>
+
+
+
+
+
+
+
+<br><br><br>
+<br><br><br><br>
+<table border=3>
+
+<tr><td></td><td><input type=button value="up" style="font-size:40px" onClick="{
+if(parseInt(document.all.myrocket.style.top)>=20){
+	document.all.myrocket.style.top = parseInt(document.all.myrocket.style.top)-20+'px'
+  }
+}">
+<br>
+<td></td></tr>
+<tr><td><input type=button value="left" style="font-size:35px" onclick="{
+if(parseInt(document.all.myrocket.style.left)){
+	document.all.myrocket.style.left = parseInt(document.all.myrocket.style.left)-20+'px'
+  }
+}">
+
+</td><td>
+
+
+ 
+</td><td><input type=button value="right" style="font-size:35px" onclick="{
+if(parseInt(document.all.myrocket.style.left)<=window.innerWidth-70){
+	document.all.myrocket.style.left = parseInt(document.all.myrocket.style.left)+20+'px'
+  }
+}">
+</td><tr><td><td><input type=button value="down" style="font-size:35px" onclick="{
+if(parseInt(document.all.myrocket.style.top)<=window.innerHeight-100){
+	document.all.myrocket.style.top = parseInt(document.all.myrocket.style.top)+20+'px'
+  }
+}">
+ 
+</td></tr>
+</table>
+
 <img  id="myearth" src="earth.png" style="position:absolute; width:60px; height:60px;left:580px; top:70px;visibility:visible"/>
 
 <img  id="myearth1" src="earth.png" style="position:absolute; width:100px; height:100px;left:550px; top:50px;visibility:visible"/>
@@ -472,67 +537,7 @@ Click to hide.
  
 
 
-
-<font color="green">
-<div id="myShowDiv1" style="visibility: hidden">out</div><br>
-<div id="myShowDiv2" style="visibility: hidden">out</div><br>
-<div id="myShowDiv3">out</div><br>
-<div id="Score"><p><font size="5">Your score is:</font></p></div>
-<div id="myShowDiv4"> </div><br>
-<div id="myCongrats" style="visibility: hidden"><font size="5">CONGRATULATIONS YOU HAVE SURVIVED THE VOYAGE BACK TO EARTH! Press the Submit button to put your score in the leaderboards!</div></font>
-</font>
-
-
-
-<form id="myform" action="http://142.33.222.23/comp2014/iliou2014/FinalProjectDataBase.php" method="post">
-
-
-<input type=text style="visibility: hidden"id="myNameSend"   name="myNamePost">
-<input type=text style="visibility: hidden" id=myScoreSend   name="myScorePost">
-<br>
-<input type=submit style="font-size:25px">
-</form>
-
-
-
-
-
-
-
-<br><br><br><br><br><br>
-<br><br><br><br>
-<table border=3>
-
-<tr><td></td><td><input type=button value="up" style="font-size:30px" onClick="{
-if(parseInt(document.all.myrocket.style.top)>=20){
-	document.all.myrocket.style.top = parseInt(document.all.myrocket.style.top)-20+'px'
-  }
-}">
-<br>
-<td></td></tr>
-<tr><td><input type=button value="left" style="font-size:30px" onclick="{
-if(parseInt(document.all.myrocket.style.left)){
-	document.all.myrocket.style.left = parseInt(document.all.myrocket.style.left)-20+'px'
-  }
-}">
-
-</td><td>
-
-
  
-</td><td><input type=button value="right" style="font-size:30px" onclick="{
-if(parseInt(document.all.myrocket.style.left)<=window.innerWidth-70){
-	document.all.myrocket.style.left = parseInt(document.all.myrocket.style.left)+20+'px'
-  }
-}">
-</td><tr><td><td><input type=button value="down" style="font-size:30px" onclick="{
-if(parseInt(document.all.myrocket.style.top)<=window.innerHeight-100){
-	document.all.myrocket.style.top = parseInt(document.all.myrocket.style.top)+20+'px'
-  }
-}">
- 
-</td></tr>
-</table>
 
 
 
